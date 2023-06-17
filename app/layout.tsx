@@ -42,6 +42,25 @@ export default async function RootLayout({
         </Suspense>
         {children}
       </body>
+      <footer>
+        <div className="flex flex-col items-center justify-center py-4 bg-primary text-white">
+          <p className="text-sm">
+            Made with{" "}
+            <span role="img" aria-label="love">
+              ❤️
+            </span>{" "}
+            by{" "}
+            <a
+              href="
+            https://twitter.com/M3tbe
+          "
+              className="font-bold hover:underline"
+            >
+              Mathieu Vandecasteele
+            </a>
+          </p>
+        </div>
+      </footer>
     </html>
   );
 }
